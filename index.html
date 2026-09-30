@@ -34,10 +34,10 @@
 <body>
 <div class="app">
 <aside class="sidebar">
-  <div class="brand"><h1>🧠 Research Reviewer</h1><p>Study • Practice • Review</p></div>
+  <div class="brand"><h1><span class="brand-mark">RR</span> Research Reviewer</h1><p>Study • Practice • Review</p></div>
   <nav class="nav">
-    <button data-page="home">⌂ Home</button>
-    <button data-page="study">▤ Study Mode</button>
+    <button data-page="home">Home</button>
+    <button data-page="study">Study Mode</button>
     <div class="group">Test Types</div>
     <button onclick="openTestSetup('multiple-choice')">● Multiple Choice</button>
     <button onclick="openTestSetup('identification')">● Identification</button>
@@ -45,11 +45,11 @@
     <button onclick="openTestSetup('true-false')">● True / False</button>
     <button onclick="openTestSetup('situational')">● Situational Test</button>
     <button data-page="random">◈ Random / Topic Quiz</button>
-    <button data-page="flashcards">▣ Flashcards</button>
+    <button data-page="flashcards">Flashcards</button>
     <div class="group">More</div>
-    <button data-page="progress">◒ Progress</button>
-    <button data-page="instructions">ⓘ How to Use</button>
-    <button data-page="settings">⚙ Settings</button>
+    <button data-page="progress">Progress</button>
+    <button data-page="instructions">How to Use</button>
+    <button data-page="settings">Settings</button>
   </nav>
 </aside>
 
@@ -66,11 +66,11 @@
   </div>
   <div class="section-head"><h3>Test Types</h3></div>
   <div class="test-grid">
-    <button class="test-card mc" onclick="openTestSetup('multiple-choice')"><span class="test-icon">✓</span><strong>Multiple Choice</strong><small>43 questions</small></button>
-    <button class="test-card id" onclick="openTestSetup('identification')"><span class="test-icon">A</span><strong>Identification</strong><small>10 questions</small></button>
-    <button class="test-card enum" onclick="openTestSetup('enumeration')"><span class="test-icon">☷</span><strong>Enumeration</strong><small>8 questions</small></button>
-    <button class="test-card tf" onclick="openTestSetup('true-false')"><span class="test-icon">✓</span><strong>True / False</strong><small>10 questions</small></button>
-    <button class="test-card sit" onclick="openTestSetup('situational')"><span class="test-icon">◎</span><strong>Situational Test</strong><small>12 questions</small></button>
+    <button class="test-card mc" onclick="openTestSetup('multiple-choice')"><span class="test-icon">MC</span><strong>Multiple Choice</strong><small>43 questions</small></button>
+    <button class="test-card id" onclick="openTestSetup('identification')"><span class="test-icon">ID</span><strong>Identification</strong><small>10 questions</small></button>
+    <button class="test-card enum" onclick="openTestSetup('enumeration')"><span class="test-icon">EN</span><strong>Enumeration</strong><small>8 questions</small></button>
+    <button class="test-card tf" onclick="openTestSetup('true-false')"><span class="test-icon">MC</span><strong>True / False</strong><small>10 questions</small></button>
+    <button class="test-card sit" onclick="openTestSetup('situational')"><span class="test-icon">ST</span><strong>Situational Test</strong><small>12 questions</small></button>
   </div>
   <div class="section-head"><h3>Study Topics</h3><span class="muted" id="topicCount"></span></div>
   <div class="topic-grid" id="topicCards"></div>
@@ -96,7 +96,7 @@
         <option value="50">50 Questions</option>
         <option value="all">All Questions</option>
       </select>
-      <button class="btn" onclick="startRandomFromSetup()">Start Random Quiz →</button>
+      <button class="btn" onclick="startRandomFromSetup()">Start Random Quiz</button>
     </div>
   </div>
   <div class="card">
@@ -111,7 +111,7 @@
         <option value="50">Up to 50 Questions</option>
         <option value="all">All Matching Questions</option>
       </select>
-      <button class="btn" onclick="startTopicQuiz()">Start Topic Quiz →</button>
+      <button class="btn" onclick="startTopicQuiz()">Start Topic Quiz</button>
     </div>
   </div>
 </section>
@@ -126,8 +126,8 @@
         <label><span>Number of questions</span><select class="input" id="setupCount"><option value="10">10</option><option value="20">20</option><option value="30">30</option><option value="50">50</option><option value="all">All available</option></select></label>
         <label><span>Time limit</span><select class="input" id="setupTime"><option value="0">Untimed</option><option value="10">10 minutes</option><option value="20">20 minutes</option><option value="30">30 minutes</option></select></label>
       </div>
-      <div class="setup-notes"><div>🔀 <b>Questions will be randomized</b> every time you start.</div><div>🧠 <b>Answer choices are randomized</b> for multiple-choice and situational tests.</div><div>🔤 <b>Capitalization does not matter</b> for typed answers.</div></div>
-      <div class="quiz-actions"><button class="btn ghost" onclick="navigate('home')">← Back</button><button class="btn" onclick="beginConfiguredTest()">Start Test →</button></div>
+      <div class="setup-notes"><div><b>Questions randomized</b> every time you start.</div><div><b>Answer choices randomized</b> for multiple-choice and situational tests.</div><div><b>Capitalization does not matter</b> for typed answers.</div></div>
+      <div class="quiz-actions"><button class="btn ghost" onclick="navigate('home')">Back</button><button class="btn" onclick="beginConfiguredTest()">Start Test</button></div>
     </div>
   </div>
 </section>
@@ -145,8 +145,8 @@
         <div class="card flash-face flash-back"><span class="badge">Answer</span><p id="flashBack"></p></div>
       </div>
     </div>
-    <div class="flash-controls"><button class="btn secondary" onclick="prevFlash()">← Previous</button><button class="btn" onclick="flipFlash()">🔄 Flip</button><button class="btn secondary" onclick="nextFlash()">Next →</button></div>
-    <div style="margin-top:12px"><button class="btn ghost" onclick="shuffleFlash()">↗ Shuffle</button></div>
+    <div class="flash-controls"><button class="btn secondary" onclick="prevFlash()">Previous</button><button class="btn" onclick="flipFlash()">Flip Card</button><button class="btn secondary" onclick="nextFlash()">Next</button></div>
+    <div style="margin-top:12px"><button class="btn ghost" onclick="shuffleFlash()">Shuffle</button></div>
   </div>
 </section>
 
@@ -193,10 +193,10 @@
 </main>
 </div>
 <nav class="mobile-nav">
-  <button data-page="home"><span class="mobile-nav-icon">⌂</span><span>Home</span></button>
-  <button data-page="random"><span class="mobile-nav-icon">▣</span><span>Quiz</span></button>
-  <button data-page="flashcards"><span class="mobile-nav-icon">▤</span><span>Cards</span></button>
-  <button data-page="settings"><span class="mobile-nav-icon">☰</span><span>More</span></button>
+  <button data-page="home"><span class="mobile-nav-icon">H</span><span>Home</span></button>
+  <button data-page="random"><span class="mobile-nav-icon">Q</span><span>Quiz</span></button>
+  <button data-page="flashcards"><span class="mobile-nav-icon">C</span><span>Cards</span></button>
+  <button data-page="settings"><span class="mobile-nav-icon">M</span><span>More</span></button>
 </nav>
 
 <div class="modal" id="confirmModal"><div class="modal-box"><h3 id="modalTitle">Confirm reset</h3><p id="modalText" class="muted"></p><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">Cancel</button><button class="btn danger" id="confirmAction">Confirm</button></div></div></div>
@@ -381,7 +381,7 @@ function renderQuiz(){
       return `<button class="choice ${cls}" ${submitted?"disabled":""} onclick="selectChoice(${i})"><b>${String.fromCharCode(65+i)}</b>${esc(c)}</button>`
     }).join("")}</div>`;
   } else if(q.type==="true-false"){
-    body+=`<div class="choices"><button class="choice ${submitted&&q.correctAnswer===true?"correct":submitted&&z.selected===true?"wrong":z.selected===true?"selected":""}" ${submitted?"disabled":""} onclick="selectTF(true)">🟢 TRUE</button><button class="choice ${submitted&&q.correctAnswer===false?"correct":submitted&&z.selected===false?"wrong":z.selected===false?"selected":""}" ${submitted?"disabled":""} onclick="selectTF(false)">🔴 FALSE</button></div>`;
+    body+=`<div class="choices"><button class="choice ${submitted&&q.correctAnswer===true?"correct":submitted&&z.selected===true?"wrong":z.selected===true?"selected":""}" ${submitted?"disabled":""} onclick="selectTF(true)">TRUE</button><button class="choice ${submitted&&q.correctAnswer===false?"correct":submitted&&z.selected===false?"wrong":z.selected===false?"selected":""}" ${submitted?"disabled":""} onclick="selectTF(false)">FALSE</button></div>`;
   } else if(q.type==="identification"){
     body+=`<input id="idAnswer" class="input" placeholder="Type your answer..." ${submitted?"disabled":""} value="${esc(z.textAnswer||"")}">`;
   } else if(q.type==="enumeration"){
@@ -390,12 +390,12 @@ function renderQuiz(){
   let feedback="";
   if(submitted){
     const ok=z.currentCorrect;
-    feedback=`<div class="answer-box ${ok?"correct":"wrong"}"><strong>${ok?"✅ Correct!":"❌ Incorrect"}</strong>${!ok?`<div style="margin-top:7px"><b>Correct Answer:</b> ${esc(formatCorrect(q))}</div>`:""}<div style="margin-top:7px"><b>Explanation:</b> ${esc(q.explanation)}</div></div>`;
+    feedback=`<div class="answer-box ${ok?"correct":"wrong"}"><strong>${ok?"Correct":"Incorrect"}</strong>${!ok?`<div style="margin-top:7px"><b>Correct Answer:</b> ${esc(formatCorrect(q))}</div>`:""}<div style="margin-top:7px"><b>Explanation:</b> ${esc(q.explanation)}</div></div>`;
   }
   document.getElementById("quizMount").innerHTML=`
-    <div class="quiz-head"><button class="btn ghost" onclick="navigate('home')">← Exit</button><div><h2>${esc(z.title)}</h2><div class="muted">${z.index+1} of ${z.pool.length}${z.timeLimit?` · <span id="quizTimer" class="timer-badge">${formatCountdown(Math.max(0,z.timeLimit-Math.floor((Date.now()-z.startedAt)/1000)))}</span>`:""}</div></div><span class="badge">${labelType(q.type)}</span></div>
+    <div class="quiz-head"><button class="btn ghost" onclick="navigate('home')">Exit</button><div><h2>${esc(z.title)}</h2><div class="muted">${z.index+1} of ${z.pool.length}${z.timeLimit?` · <span id="quizTimer" class="timer-badge">${formatCountdown(Math.max(0,z.timeLimit-Math.floor((Date.now()-z.startedAt)/1000)))}</span>`:""}</div></div><span class="badge">${labelType(q.type)}</span></div>
     <div class="quiz-progress"><i style="width:${(z.index/z.pool.length)*100}%"></i></div>
-    <div class="card question-card"><div class="q-type">${labelType(q.type)}<button class="mark-btn ${z.marked[q.id]?"marked":""}" onclick="toggleMark()">${z.marked[q.id]?"★ Marked":"☆ Mark"}</button></div>${body}${feedback}<div class="quiz-actions">${submitted?`<button class="btn" onclick="nextQuestion()">Next Question →</button>`:`<button class="btn" onclick="submitAnswer()">Submit</button>`}</div></div>`;
+    <div class="card question-card"><div class="q-type">${labelType(q.type)}<button class="mark-btn ${z.marked[q.id]?"marked":""}" onclick="toggleMark()">${z.marked[q.id]?"Marked":"Mark for Review"}</button></div>${body}${feedback}<div class="quiz-actions">${submitted?`<button class="btn" onclick="nextQuestion()">Next Question</button>`:`<button class="btn" onclick="submitAnswer()">Submit</button>`}</div></div>`;
 }
 function selectChoice(i){state.quiz.selected=i;renderQuiz()}
 function selectTF(v){state.quiz.selected=v;renderQuiz()}
