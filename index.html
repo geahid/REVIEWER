@@ -22,8 +22,13 @@
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:100;padding:18px}.modal.show{display:flex}.modal-box{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:20px;max-width:520px;width:100%;box-shadow:var(--shadow)}.modal-box h3{margin-top:0}.modal-actions{display:flex;gap:9px;justify-content:flex-end;margin-top:18px}
 @media(max-width:1100px){.test-grid{grid-template-columns:repeat(3,1fr)}.topic-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){
- .sidebar{display:none}.main{margin-left:0;width:100%;padding-bottom:72px}.topbar{height:58px;padding:0 12px}.topbar .title{display:none}.search{max-width:none}.content{padding:12px}.home-hero{display:block}.hero{min-height:0;padding:18px;border-radius:19px}.hero h2{font-size:22px}.hero p{font-size:12px}.hero .btn{display:none}.progress-card{margin-top:9px;padding:14px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px}.progress-ring{width:62px;height:62px;margin:0}.progress-ring:after{width:46px;height:46px}.progress-card h3{font-size:14px}.progress-card p{font-size:11px;margin:3px 0}.progress-card .btn{font-size:11px}.section-head{margin:19px 0 9px}.section-head h2{font-size:19px}.section-head h3{font-size:16px}.test-grid{grid-template-columns:repeat(2,1fr);gap:8px}.test-card{min-height:104px;padding:13px;border-radius:16px}.test-card strong{font-size:13px}.test-card small{font-size:10px}.test-icon{width:31px;height:31px;margin-bottom:9px}.test-grid .sit{grid-column:1/-1}.topic-grid{grid-template-columns:1fr;gap:8px}.topic-card{min-height:112px}.topic-quiz-grid{grid-template-columns:1fr;gap:8px}.topic-quiz-option{min-height:68px}.topic-card .topic-top{padding:12px 13px 8px}.topic-card .topic-info{padding:0 13px}.topic-card .topic-progress{padding:9px 13px}.study-layout{display:block}.topic-list{position:static;display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-bottom:10px;padding:7px}.topic-list button{margin:0;padding:8px;font-size:11px}.topic-list button .topic-list-num{width:24px;height:24px}.instructions-grid{grid-template-columns:1fr}.quick{display:none}.question-card{padding:17px}.question{font-size:19px}.quiz-head{position:sticky;top:58px;background:var(--bg);z-index:5;padding:5px 0}.quiz-actions{position:sticky;bottom:70px;background:var(--surface);padding-top:9px}.progress-grid{grid-template-columns:1fr}.flashcard,.flash-inner{min-height:320px}.flash-face h2{font-size:26px}.filters{display:grid;grid-template-columns:1fr}.filters .input{width:100%}.mobile-nav{display:grid;position:fixed;z-index:50;bottom:0;left:0;right:0;height:70px;background:var(--surface);border-top:1px solid var(--border);grid-template-columns:repeat(4,1fr);padding-bottom:3px}.mobile-nav button{border:0;background:transparent;color:var(--muted);font-size:10px;font-weight:800}.mobile-nav button.active{color:var(--primary)}
+ .sidebar{display:none}.main{margin-left:0;width:100%;padding-bottom:72px}.topbar{height:58px;padding:0 12px}.topbar .title{display:block;font-size:16px}.search{display:none}.content{padding:12px}.home-hero{display:block}.hero{min-height:0;padding:18px;border-radius:19px}.hero h2{font-size:22px}.hero p{font-size:12px}.hero .btn{display:none}.progress-card{margin-top:9px;padding:14px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px}.progress-ring{width:62px;height:62px;margin:0}.progress-ring:after{width:46px;height:46px}.progress-card h3{font-size:14px}.progress-card p{font-size:11px;margin:3px 0}.progress-card .btn{font-size:11px}.section-head{margin:19px 0 9px}.section-head h2{font-size:19px}.section-head h3{font-size:16px}.test-grid{grid-template-columns:repeat(2,1fr);gap:8px}.test-card{min-height:104px;padding:13px;border-radius:16px}.test-card strong{font-size:13px}.test-card small{font-size:10px}.test-icon{width:31px;height:31px;margin-bottom:9px}.test-grid .sit{grid-column:1/-1}.topic-grid{grid-template-columns:1fr;gap:8px}.topic-card{min-height:112px}.topic-quiz-grid{grid-template-columns:1fr;gap:8px}.topic-quiz-option{min-height:68px}.topic-card .topic-top{padding:12px 13px 8px}.topic-card .topic-info{padding:0 13px}.topic-card .topic-progress{padding:9px 13px}.study-layout{display:block}.topic-list{position:static;display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-bottom:10px;padding:7px}.topic-list button{margin:0;padding:8px;font-size:11px}.topic-list button .topic-list-num{width:24px;height:24px}.instructions-grid{grid-template-columns:1fr}.quick{display:none}.question-card{padding:17px}.question{font-size:19px}.quiz-head{position:sticky;top:58px;background:var(--bg);z-index:5;padding:5px 0}.quiz-actions{position:sticky;bottom:70px;background:var(--surface);padding-top:9px}.progress-grid{grid-template-columns:1fr}.flashcard,.flash-inner{min-height:320px}.flash-face h2{font-size:26px}.filters{display:grid;grid-template-columns:1fr}.filters .input{width:100%}.mobile-nav{display:grid;position:fixed;z-index:50;bottom:0;left:0;right:0;height:78px;background:var(--surface);border-top:1px solid var(--border);grid-template-columns:repeat(4,1fr);padding:5px 6px 7px;box-shadow:0 -6px 20px rgba(35,55,95,.08)}.mobile-nav button{border:0;background:transparent;color:var(--muted);font-size:12px;font-weight:850;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:64px}.mobile-nav .mobile-nav-icon{font-size:23px;line-height:1;font-weight:900}.mobile-nav button.active{color:var(--primary)}
 }
+
+.search-panel{padding:16px}.search-box{display:flex;align-items:center;gap:9px}.search-box span{font-size:20px;color:var(--muted);margin-left:4px}.search-box input{flex:1;border:1px solid var(--border);background:var(--surface2);color:var(--text);padding:12px 13px;border-radius:12px;outline:none}.search-hint{font-size:12px;margin:9px 2px 0}
+
+.setup-card{padding:22px}.setup-type{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);font-weight:900}.setup-card h3{margin:7px 0}.setup-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}.setup-grid label{display:grid;gap:7px;font-size:12px;font-weight:800}.setup-notes{display:grid;gap:8px;background:var(--surface2);padding:14px;border-radius:14px;color:var(--muted);font-size:12px;line-height:1.5}.setup-notes b{color:var(--text)}.review-toggle{display:flex;align-items:center;gap:8px;margin-top:12px;color:var(--muted);font-size:12px}.mark-btn{float:right;border:1px solid var(--border);background:var(--surface);color:var(--muted);border-radius:10px;padding:7px 10px;font-weight:800}.mark-btn.marked{color:var(--warning);border-color:var(--warning);background:color-mix(in srgb,var(--warning) 10%,var(--surface))}.timer-badge{font-variant-numeric:tabular-nums}
+@media(max-width:760px){.setup-grid{grid-template-columns:1fr}.setup-card{padding:17px}}
 </style>
 </head>
 <body>
@@ -34,11 +39,11 @@
     <button data-page="home">⌂ Home</button>
     <button data-page="study">▤ Study Mode</button>
     <div class="group">Test Types</div>
-    <button onclick="startMode('multiple-choice')">● Multiple Choice</button>
-    <button onclick="startMode('identification')">● Identification</button>
-    <button onclick="startMode('enumeration')">● Enumeration</button>
-    <button onclick="startMode('true-false')">● True / False</button>
-    <button onclick="startMode('situational')">● Situational Test</button>
+    <button onclick="openTestSetup('multiple-choice')">● Multiple Choice</button>
+    <button onclick="openTestSetup('identification')">● Identification</button>
+    <button onclick="openTestSetup('enumeration')">● Enumeration</button>
+    <button onclick="openTestSetup('true-false')">● True / False</button>
+    <button onclick="openTestSetup('situational')">● Situational Test</button>
     <button data-page="random">◈ Random / Topic Quiz</button>
     <button data-page="flashcards">▣ Flashcards</button>
     <div class="group">More</div>
@@ -51,8 +56,6 @@
 <main class="main">
 <header class="topbar">
   <div class="title">Research in Psychology</div>
-  <div class="search"><span>⌕</span><input id="globalSearch" placeholder="Search topics, terms, questions..." /></div>
-  <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
 </header>
 
 <div class="content">
@@ -63,11 +66,11 @@
   </div>
   <div class="section-head"><h3>Test Types</h3></div>
   <div class="test-grid">
-    <button class="test-card mc" onclick="startMode('multiple-choice')"><span class="test-icon">✓</span><strong>Multiple Choice</strong><small>43 questions</small></button>
-    <button class="test-card id" onclick="startMode('identification')"><span class="test-icon">A</span><strong>Identification</strong><small>10 questions</small></button>
-    <button class="test-card enum" onclick="startMode('enumeration')"><span class="test-icon">☷</span><strong>Enumeration</strong><small>8 questions</small></button>
-    <button class="test-card tf" onclick="startMode('true-false')"><span class="test-icon">✓</span><strong>True / False</strong><small>10 questions</small></button>
-    <button class="test-card sit" onclick="startMode('situational')"><span class="test-icon">◎</span><strong>Situational Test</strong><small>12 questions</small></button>
+    <button class="test-card mc" onclick="openTestSetup('multiple-choice')"><span class="test-icon">✓</span><strong>Multiple Choice</strong><small>43 questions</small></button>
+    <button class="test-card id" onclick="openTestSetup('identification')"><span class="test-icon">A</span><strong>Identification</strong><small>10 questions</small></button>
+    <button class="test-card enum" onclick="openTestSetup('enumeration')"><span class="test-icon">☷</span><strong>Enumeration</strong><small>8 questions</small></button>
+    <button class="test-card tf" onclick="openTestSetup('true-false')"><span class="test-icon">✓</span><strong>True / False</strong><small>10 questions</small></button>
+    <button class="test-card sit" onclick="openTestSetup('situational')"><span class="test-icon">◎</span><strong>Situational Test</strong><small>12 questions</small></button>
   </div>
   <div class="section-head"><h3>Study Topics</h3><span class="muted" id="topicCount"></span></div>
   <div class="topic-grid" id="topicCards"></div>
@@ -113,6 +116,22 @@
   </div>
 </section>
 
+<section id="page-testsetup" class="page">
+  <div class="quiz-wrap">
+    <div class="section-head"><h2 id="setupTitle">Test Setup</h2><span class="muted">Prepare your test</span></div>
+    <div class="card setup-card">
+      <div class="setup-type" id="setupType"></div>
+      <p class="muted" id="setupInstruction"></p>
+      <div class="setup-grid">
+        <label><span>Number of questions</span><select class="input" id="setupCount"><option value="10">10</option><option value="20">20</option><option value="30">30</option><option value="50">50</option><option value="all">All available</option></select></label>
+        <label><span>Time limit</span><select class="input" id="setupTime"><option value="0">Untimed</option><option value="10">10 minutes</option><option value="20">20 minutes</option><option value="30">30 minutes</option></select></label>
+      </div>
+      <div class="setup-notes"><div>🔀 <b>Questions will be randomized</b> every time you start.</div><div>🧠 <b>Answer choices are randomized</b> for multiple-choice and situational tests.</div><div>🔤 <b>Capitalization does not matter</b> for typed answers.</div></div>
+      <div class="quiz-actions"><button class="btn ghost" onclick="navigate('home')">← Back</button><button class="btn" onclick="beginConfiguredTest()">Start Test →</button></div>
+    </div>
+  </div>
+</section>
+
 <section id="page-quiz" class="page">
   <div class="quiz-wrap" id="quizMount"></div>
 </section>
@@ -152,6 +171,7 @@
 <section id="page-settings" class="page">
   <div class="section-head"><h2>More</h2></div>
   <div class="settings">
+    <div class="card setting-row"><div><strong>Search Reviewer</strong><div class="muted">Find topics, terms, and questions.</div></div><button class="btn secondary" onclick="navigate('search'); setTimeout(()=>document.getElementById('reviewSearch')?.focus(),0)">Search</button></div>
     <div class="card setting-row"><div><strong>How to Use</strong><div class="muted">Learn the reviewer in a few simple steps.</div></div><button class="btn secondary" onclick="navigate('instructions')">Open</button></div>
     <div class="card setting-row"><div><strong>Dark Mode</strong><div class="muted">Save your preferred theme in this browser.</div></div><input id="darkSwitch" class="switch" type="checkbox"></div>
     <div class="card setting-row"><div><strong>Sound Effects</strong><div class="muted">Optional feedback sound for quiz answers.</div></div><input id="soundSwitch" class="switch" type="checkbox"></div>
@@ -162,16 +182,21 @@
 </section>
 
 <section id="page-search" class="page">
-  <div class="section-head"><h2>Search Results</h2></div><div id="searchMount" class="search-results"></div>
+  <div class="section-head"><h2>Search Reviewer</h2></div>
+  <div class="card search-panel">
+    <div class="search-box"><span>⌕</span><input id="reviewSearch" placeholder="Search topics, terms, questions..." autocomplete="off"><button class="btn" id="reviewSearchBtn">Search</button></div>
+    <p class="muted search-hint">Search the study material and questions.</p>
+  </div>
+  <div id="searchMount" class="search-results"></div>
 </section>
 </div>
 </main>
 </div>
 <nav class="mobile-nav">
-  <button data-page="home">⌂<br>Home</button>
-  <button data-page="random">▣<br>Quiz</button>
-  <button data-page="flashcards">▤<br>Cards</button>
-  <button data-page="settings">☰<br>More</button>
+  <button data-page="home"><span class="mobile-nav-icon">⌂</span><span>Home</span></button>
+  <button data-page="random"><span class="mobile-nav-icon">▣</span><span>Quiz</span></button>
+  <button data-page="flashcards"><span class="mobile-nav-icon">▤</span><span>Cards</span></button>
+  <button data-page="settings"><span class="mobile-nav-icon">☰</span><span>More</span></button>
 </nav>
 
 <div class="modal" id="confirmModal"><div class="modal-box"><h3 id="modalTitle">Confirm reset</h3><p id="modalText" class="muted"></p><div class="modal-actions"><button class="btn secondary" onclick="closeModal()">Cancel</button><button class="btn danger" id="confirmAction">Confirm</button></div></div></div>
@@ -183,7 +208,7 @@ const QUESTIONS = DATA.questions;
 const FLASHCARDS = DATA.flashcards;
 
 const state = {
-  page:"home", quiz:null, flashIndex:0, flashFlipped:false,
+  page:"home", quiz:null, testSetup:null, flashIndex:0, flashFlipped:false, timer:null,
   stats: JSON.parse(localStorage.getItem("riPsychStats") || "null") || {
     answered:0, correct:0, incorrect:0, topicAnswered:{}, topicCorrect:{}, history:[], studySeconds:0
   }
@@ -203,15 +228,17 @@ function navigate(page, push=true){
   if(el)el.classList.add("active");
   document.querySelectorAll("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===page));
   if(push && previous!==page) history.pushState({page},"",`#${page}`);
+  if(page!=="quiz" && state.timer){clearInterval(state.timer);state.timer=null;}
   if(page==="home")renderHome();
   if(page==="study")renderStudy();
   if(page==="random")renderRandomSetup();
+  if(page==="testsetup")renderTestSetup();
   if(page==="progress")renderProgress();
   if(page==="flashcards"){renderFlash();renderFlashCard()}
 }
 window.addEventListener("popstate",()=>{
   const page=(location.hash||"#home").slice(1);
-  const valid=["home","study","random","quiz","flashcards","progress","instructions","settings","search"];
+  const valid=["home","study","random","testsetup","quiz","flashcards","progress","instructions","settings","search"];
   navigate(valid.includes(page)?page:"home",false);
 });
 document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>navigate(b.dataset.page)));
@@ -248,6 +275,36 @@ function selectStudy(id){
     t.sections.map((s,i)=>`<details class="card study-section" ${i===0?"open":""}><summary>${i+1}. ${esc(s.title)}</summary><div class="inside">${esc(s.content)}</div></details>`).join("");
 }
 
+function openTestSetup(type){
+  state.testSetup={type};
+  navigate("testsetup");
+}
+function testInstruction(type){return ({
+  "multiple-choice":"Choose the best answer from the choices provided.",
+  "identification":"Type the term or concept that matches the question. Capitalization does not matter.",
+  "enumeration":"Type the required items. Order does not matter and capitalization does not matter.",
+  "true-false":"Decide whether each statement is TRUE or FALSE.",
+  "situational":"Read the situation carefully and choose the best answer."
+})[type]||"Answer each question carefully."}
+function renderTestSetup(){
+  const t=state.testSetup?.type||"multiple-choice", count=QUESTIONS.filter(q=>q.type===t).length;
+  document.getElementById("setupTitle").textContent=labelType(t);
+  document.getElementById("setupType").textContent=`${count} questions available`;
+  document.getElementById("setupInstruction").textContent=testInstruction(t);
+  const sel=document.getElementById("setupCount");
+  [...sel.options].forEach(o=>o.hidden=(o.value!=="all" && Number(o.value)>count));
+  if(Number(sel.value)>count)sel.value="all";
+}
+function beginConfiguredTest(){
+  const type=state.testSetup?.type||"multiple-choice";
+  let pool=QUESTIONS.filter(q=>q.type===type);
+  const raw=document.getElementById("setupCount").value;
+  const n=raw==="all"?pool.length:Number(raw);
+  pool=shuffle([...pool]).slice(0,n);
+  if(!pool.length){alert("There are no source-based questions for this test yet.");return;}
+  const minutes=Number(document.getElementById("setupTime").value)||0;
+  startQuiz(labelType(type),pool,minutes);
+}
 function startMode(type, topicFilter=null, questionsOverride=null){
   let pool=questionsOverride || QUESTIONS.filter(q=>q.type===type);
   if(topicFilter) pool=pool.filter(q=>topicFilter.includes(q.topic));
@@ -294,13 +351,22 @@ function prepareQuizQuestion(q){
   return copy;
 }
 
-function startQuiz(title,pool){
-  // Do not reuse the previous test order. A new entry always gets a fresh shuffle.
+function startQuiz(title,pool,timeLimit=0){
   const freshPool=shuffle(pool.map(prepareQuizQuestion));
-  state.quiz={title,pool:freshPool,index:0,answers:[],submitted:false,selected:null};
+  state.quiz={title,pool:freshPool,index:0,answers:[],submitted:false,selected:null,marked:{},startedAt:Date.now(),timeLimit:timeLimit*60};
   navigate("quiz");
+  if(state.timer)clearInterval(state.timer);
+  if(timeLimit>0){state.timer=setInterval(()=>{
+    if(!state.quiz||state.page!=="quiz")return;
+    const left=Math.max(0,state.quiz.timeLimit-Math.floor((Date.now()-state.quiz.startedAt)/1000));
+    const el=document.getElementById("quizTimer");if(el)el.textContent=formatCountdown(left);
+    if(left<=0){clearInterval(state.timer);state.timer=null;finishTimedQuiz();}
+  },1000);}
   renderQuiz();
 }
+function formatCountdown(sec){const m=Math.floor(sec/60),s=sec%60;return `${String(m).padStart(2,"0")}:${String(s).padStart(2,"0")}`;}
+function finishTimedQuiz(){if(!state.quiz)return; if(!state.quiz.submitted){state.quiz.timedOut=true;} state.quiz.index=state.quiz.pool.length;renderResults();}
+function toggleMark(){if(!state.quiz)return;const id=state.quiz.pool[state.quiz.index].id;state.quiz.marked[id]=!state.quiz.marked[id];renderQuiz();}
 function renderQuiz(){
   const z=state.quiz;if(!z)return;
   if(z.index>=z.pool.length){renderResults();return}
@@ -327,13 +393,13 @@ function renderQuiz(){
     feedback=`<div class="answer-box ${ok?"correct":"wrong"}"><strong>${ok?"✅ Correct!":"❌ Incorrect"}</strong>${!ok?`<div style="margin-top:7px"><b>Correct Answer:</b> ${esc(formatCorrect(q))}</div>`:""}<div style="margin-top:7px"><b>Explanation:</b> ${esc(q.explanation)}</div></div>`;
   }
   document.getElementById("quizMount").innerHTML=`
-    <div class="quiz-head"><button class="btn ghost" onclick="navigate('home')">← Exit</button><div><h2>${esc(z.title)}</h2><div class="muted">${z.index+1} of ${z.pool.length}</div></div><span class="badge">${labelType(q.type)}</span></div>
+    <div class="quiz-head"><button class="btn ghost" onclick="navigate('home')">← Exit</button><div><h2>${esc(z.title)}</h2><div class="muted">${z.index+1} of ${z.pool.length}${z.timeLimit?` · <span id="quizTimer" class="timer-badge">${formatCountdown(Math.max(0,z.timeLimit-Math.floor((Date.now()-z.startedAt)/1000)))}</span>`:""}</div></div><span class="badge">${labelType(q.type)}</span></div>
     <div class="quiz-progress"><i style="width:${(z.index/z.pool.length)*100}%"></i></div>
-    <div class="card question-card"><div class="q-type">${labelType(q.type)}</div>${body}${feedback}<div class="quiz-actions">${submitted?`<button class="btn" onclick="nextQuestion()">Next Question →</button>`:`<button class="btn" onclick="submitAnswer()">Submit</button>`}</div></div>`;
+    <div class="card question-card"><div class="q-type">${labelType(q.type)}<button class="mark-btn ${z.marked[q.id]?"marked":""}" onclick="toggleMark()">${z.marked[q.id]?"★ Marked":"☆ Mark"}</button></div>${body}${feedback}<div class="quiz-actions">${submitted?`<button class="btn" onclick="nextQuestion()">Next Question →</button>`:`<button class="btn" onclick="submitAnswer()">Submit</button>`}</div></div>`;
 }
 function selectChoice(i){state.quiz.selected=i;renderQuiz()}
 function selectTF(v){state.quiz.selected=v;renderQuiz()}
-function normalize(s){return String(s||"").toLowerCase().replace(/\s+/g," ").trim().replace(/[.,;:!?]+$/g,"")}
+function normalize(s){return String(s||"").normalize("NFKC").toLowerCase().replace(/\s+/g," ").trim().replace(/[.,;:!?]+$/g,"")}
 function enumMatch(a,b){return normalize(a)===normalize(b)}
 function submitAnswer(){
   const z=state.quiz,q=z.pool[z.index];let correct=false;
@@ -364,9 +430,10 @@ function formatCorrect(q){
 }
 function nextQuestion(){state.quiz.index++;state.quiz.submitted=false;state.quiz.selected=null;state.quiz.textAnswer="";state.quiz.enumAnswers=[];renderQuiz()}
 function renderResults(){
-  const z=state.quiz, correct=z.answers.filter(a=>a.correct).length,total=z.answers.length,wrong=z.answers.filter(a=>!a.correct);
-  state.stats.history.unshift({title:z.title,score:correct,total,time:Date.now(),wrong:wrong.map(x=>x.q.id)});state.stats.history=state.stats.history.slice(0,30);save();
-  document.getElementById("quizMount").innerHTML=`<div class="result"><div class="card"><div class="score-big">${pct(correct,total)}%</div><h2 style="text-align:center">${correct} / ${total}</h2><p style="text-align:center" class="muted">Correct: ${correct} · Incorrect: ${total-correct}</p></div>
+  if(state.timer){clearInterval(state.timer);state.timer=null;}
+  const z=state.quiz, correct=z.answers.filter(a=>a.correct).length,total=z.answers.length,wrong=z.answers.filter(a=>!a.correct),unanswered=Math.max(0,z.pool.length-total),elapsed=Math.floor((Date.now()-z.startedAt)/1000);
+  state.stats.history.unshift({title:z.title,score:correct,total,time:Date.now(),wrong:wrong.map(x=>x.q.id),elapsed});state.stats.history=state.stats.history.slice(0,30);save();
+  document.getElementById("quizMount").innerHTML=`<div class="result"><div class="card"><div class="score-big">${pct(correct,total)}%</div><h2 style="text-align:center">${correct} / ${total}</h2><p style="text-align:center" class="muted">Correct: ${correct} · Incorrect: ${wrong.length} · Unanswered: ${unanswered}</p><p style="text-align:center" class="muted">Time: ${formatTime(elapsed)}${z.timedOut?" · Time limit reached":""}</p></div>
   <div class="card"><h3>Questions to Review</h3>${wrong.length?wrong.map(x=>`<div class="review-item"><strong>${esc(x.q.question)}</strong><p class="muted"><b>Your Answer:</b> ${esc(x.user||"No answer")}</p><p><b>Correct Answer:</b> ${esc(formatCorrect(x.q))}</p><p class="muted"><b>Explanation:</b> ${esc(x.q.explanation)}</p></div>`).join(""):"<div class='empty'>Excellent — no incorrect questions in this quiz.</div>"}</div>
   <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap"><button class="btn" onclick="retryIncorrect()">Retry Incorrect Questions</button><button class="btn secondary" onclick="startRandom(20)">New Random Quiz</button><button class="btn ghost" onclick="navigate('home')">Home</button></div></div>`;
 }
@@ -404,8 +471,8 @@ function renderSearch(query){
   document.getElementById("searchMount").innerHTML=hits.length?hits.slice(0,60).map((h,i)=>`<div class="card result-item" onclick="SEARCH_ACTIONS[${i}]()"><span class="badge">${esc(h.kind)}</span><strong>${esc(h.title)}</strong><p>${esc(h.text.slice(0,240))}${h.text.length>240?"…":""}</p></div>`).join(""):"<div class='empty'>No source-based results found.</div>";
   window.SEARCH_ACTIONS=hits.slice(0,60).map(h=>h.action);navigate("search");
 }
-document.getElementById("globalSearch").addEventListener("keydown",e=>{if(e.key==="Enter")renderSearch(e.target.value)});
-document.getElementById("globalSearch").addEventListener("input",e=>{if(e.target.value.trim().length>=2)renderSearch(e.target.value)});
+document.getElementById("reviewSearchBtn")?.addEventListener("click",()=>renderSearch(document.getElementById("reviewSearch")?.value||""));
+document.getElementById("reviewSearch")?.addEventListener("keydown",e=>{if(e.key==="Enter")renderSearch(e.target.value)});
 
 function confirmReset(kind){
   document.getElementById("modalTitle").textContent=kind==="progress"?"Reset all progress?":"Reset quiz history?";
@@ -417,10 +484,8 @@ function closeModal(){document.getElementById("confirmModal").classList.remove("
 
 function applyTheme(){
   const dark=localStorage.getItem("riPsychTheme")==="dark";document.documentElement.dataset.theme=dark?"dark":"light";
-  document.getElementById("themeBtn").textContent=dark?"☀️":"🌙";
   const sw=document.getElementById("darkSwitch");if(sw)sw.checked=dark;
 }
-document.getElementById("themeBtn").onclick=()=>{localStorage.setItem("riPsychTheme",document.documentElement.dataset.theme==="dark"?"light":"dark");applyTheme()};
 document.getElementById("darkSwitch").onchange=e=>{localStorage.setItem("riPsychTheme",e.target.checked?"dark":"light");applyTheme()};
 document.getElementById("soundSwitch").checked=localStorage.getItem("riPsychSound")==="true";
 document.getElementById("soundSwitch").onchange=e=>localStorage.setItem("riPsychSound",e.target.checked?"true":"false");
@@ -429,7 +494,7 @@ let lastTick=Date.now();setInterval(()=>{const now=Date.now(),d=Math.floor((now-
 
 applyTheme();
 const initialPage=(location.hash||"#home").slice(1);
-const validInitial=["home","study","random","quiz","flashcards","progress","instructions","settings","search"];
+const validInitial=["home","study","random","testsetup","quiz","flashcards","progress","instructions","settings","search"];
 history.replaceState({page:validInitial.includes(initialPage)?initialPage:"home"},"",`#${validInitial.includes(initialPage)?initialPage:"home"}`);
 navigate(validInitial.includes(initialPage)?initialPage:"home",false);
 </script>
